@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "UsefulExtensions"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Some useful extensions in Swift."
   s.description  =  <<-DESC
                     Here you can find some class extension which i created in my projects.
