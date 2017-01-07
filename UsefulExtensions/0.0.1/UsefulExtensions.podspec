@@ -24,6 +24,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/bellots/usefulExtensions.git", :tag => "#{s.version}" }
   s.ios.deployment_target = '10.0'
 
-  s.source_files  = "Classes", "UsefulExtensions/**/*.{h,m}"
+  s.source_files  = "Classes", "UsefulExtensions/**/*.{h,m,swift}"
 
 end
