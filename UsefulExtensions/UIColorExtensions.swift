@@ -19,23 +19,4 @@ extension UIColor {
         self.init(r:(netHex >> 16) & 0xff, g:(netHex >> 8) & 0xff, b:netHex & 0xff)
     }
     
-    
-    
-    
-    open class var yellowMain:UIColor {
-        return UIColor(r: 241, g: 199, b: 0)
-    }
-    open class var grayMain:UIColor {
-        return UIColor(r: 242, g: 242, b: 242)
-    }
-    open class var grayDark:UIColor {
-        return UIColor(r: 228, g: 228, b: 228)
-    }
-    open class var grayDarker:UIColor {
-        return UIColor(r: 129, g: 129, b: 129)
-    }
-    open class var grayDarkerDarker:UIColor {
-        return UIColor(netHex: 333333)
-    }
-    
 }
