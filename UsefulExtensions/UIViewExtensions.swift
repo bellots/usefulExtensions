@@ -13,7 +13,7 @@ extension UIView {
     
     // returns the name of the view in string
 
-    class var nameIdentifier:String {
+    public class var nameIdentifier:String {
         return String(describing: self)
     }
     
@@ -24,7 +24,7 @@ extension UIView {
      in your storyboard
      */
     
-    func loadViewFromNib() -> UIView
+    public func loadViewFromNib() -> UIView
     {
         let bundle = Bundle(for:type(of: self))
         let nib = UINib(nibName: type(of: self).nameIdentifier, bundle: bundle)
@@ -33,7 +33,7 @@ extension UIView {
         return view
     }
 
-    func setup()
+    open func setup()
     {
         let view = loadViewFromNib()
         view.frame = bounds
@@ -46,7 +46,7 @@ extension UIView {
     
     // updates constraint constant animating
     
-    func change(constraint:NSLayoutConstraint, constantWith value:CGFloat, andAnimating animate:Bool){
+    public func change(constraint:NSLayoutConstraint, constantWith value:CGFloat, andAnimating animate:Bool){
         constraint.constant = value
         if animate{
             UIView.animate(withDuration: 0.3, animations: {
@@ -60,7 +60,7 @@ extension UIView {
     
     // fades UIView Out, In, and Toggle with animation
     
-    func fadeOut(withAnimation animate:Bool){
+    public func fadeOut(withAnimation animate:Bool){
         if animate{
             UIView.animate(withDuration: 0.3, animations: {
                 self.alpha = 0
@@ -76,7 +76,7 @@ extension UIView {
             
         }
     }
-    func fadeIn(withAnimation animate:Bool){
+    public func fadeIn(withAnimation animate:Bool){
         self.isHidden = false
         
         if animate{
@@ -92,7 +92,7 @@ extension UIView {
             
         }
     }
-    func fade(withAnimation animate:Bool){
+    public func fade(withAnimation animate:Bool){
         if animate{
             self.isHidden = false
             UIView.animate(withDuration: 0.3, animations: {
@@ -128,7 +128,7 @@ extension UIView {
     
     // Variables for corner radius and border accessibles from storyboard
     
-    @IBInspectable var cornerRadius: CGFloat {
+    @IBInspectable public var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -138,7 +138,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable var borderWidth: CGFloat {
+    @IBInspectable public var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
@@ -147,7 +147,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable var borderColor: UIColor {
+    @IBInspectable public var borderColor: UIColor {
         get {
             if let layerColor = layer.borderColor {
                 return UIColor(cgColor: layerColor)

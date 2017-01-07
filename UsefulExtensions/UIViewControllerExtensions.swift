@@ -14,7 +14,7 @@ extension UIViewController{
     
     // returns the name of the viewcontroller in string
     
-    class var nameIdentifier:String {
+   public class var nameIdentifier:String {
         return String(describing: self)
     }
     
@@ -24,7 +24,7 @@ extension UIViewController{
         inside a UINavigationController
     */
     
-    func present(viewControllerToPresent viewController:UIViewController, animated:Bool, embedInNavigationController:Bool, completion:(() -> Void)?){
+    public func present(viewControllerToPresent viewController:UIViewController, animated:Bool, embedInNavigationController:Bool, completion:(() -> Void)?){
         if embedInNavigationController {
             let navContr = UINavigationController(rootViewController: viewController)
             self.present(navContr, animated: animated, completion: completion)

@@ -13,13 +13,13 @@ extension UITableView {
     
     // checks if uitableview is already to bottom
     
-    var isScrolledToBottom:Bool {
+    public var isScrolledToBottom:Bool {
         return self.contentOffset.y >= (self.contentSize.height - self.frame.size.height)
     }
     
     // scrolls automatically to bottom uitableview
     
-    func scrollToBottom(animated: Bool) {
+    public func scrollToBottom(animated: Bool) {
         
         let delay = 0.1 * Double(NSEC_PER_SEC)
         let time = DispatchTime.now() + Double(Int64(delay)) / Double(NSEC_PER_SEC)
@@ -39,7 +39,7 @@ extension UITableView {
     
     // registers uitableviewcell in viewcontroller in a more simple way
     
-    func register<T: UITableViewCell>(_: T.Type){
+    public func register<T: UITableViewCell>(_: T.Type){
         self.register(UINib(nibName: T.nameIdentifier, bundle: Bundle.main), forCellReuseIdentifier: T.nameIdentifier)
     }
     

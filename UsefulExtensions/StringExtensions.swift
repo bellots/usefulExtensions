@@ -12,16 +12,16 @@ import UIKit
 extension String {
     
     // return the localized string from a string label
-    var localized: String {
+    public var localized: String {
         return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
     }
     
-    func localizedWithComment(comment:String) -> String {
+    public func localizedWithComment(comment:String) -> String {
         return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: comment)
     }
     
     // trims the string from useless whitespaces and newlines
-    var trimmed:String{
+    public var trimmed:String{
         return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
     

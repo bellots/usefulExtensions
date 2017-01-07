@@ -12,7 +12,7 @@ extension UITextField{
     
     // changes placeholder text color
     
-    @IBInspectable var placeHolderColor: UIColor? {
+    @IBInspectable public var placeHolderColor: UIColor? {
         get {
             return self.placeHolderColor
         }

@@ -12,7 +12,7 @@ import UIKit
 extension UIApplication {
     // returns the active viewcontroller
     
-    class func toppestViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+    public class func toppestViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
         if let nav = base as? UINavigationController {
             return toppestViewController(base: nav.visibleViewController)
         }

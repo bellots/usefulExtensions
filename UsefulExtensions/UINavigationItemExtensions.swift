@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UINavigationItem{
-    func addDismissLeftButton(target:AnyObject, selector:Selector, image:UIImage, scale:CGFloat){
+    public func addDismissLeftButton(target:AnyObject, selector:Selector, image:UIImage, scale:CGFloat){
         self.hidesBackButton = true
         let originalImage = image
         let scaledIcon = UIImage(cgImage: originalImage.cgImage!, scale: scale, orientation: originalImage.imageOrientation)

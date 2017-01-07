@@ -12,10 +12,10 @@ import UIKit
 extension UIColor {
     // simplify initialization for UIColors
     
-    convenience init(r: Int, g:Int , b:Int) {
+    public convenience init(r: Int, g:Int , b:Int) {
         self.init(red: CGFloat(r)/255, green: CGFloat(g)/255, blue: CGFloat(b)/255, alpha: 1.0)
     }
-    convenience init(netHex:Int) {
+    public convenience init(netHex:Int) {
         self.init(r:(netHex >> 16) & 0xff, g:(netHex >> 8) & 0xff, b:netHex & 0xff)
     }
     

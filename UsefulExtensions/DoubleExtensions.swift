@@ -12,7 +12,7 @@ extension Double {
     
     // rounds to fraction digits the double
     
-    func roundToDecimal(fractionDigits: Int) -> Double {
+    public func roundToDecimal(fractionDigits: Int) -> Double {
         let multiplier = pow(10.0, Double(fractionDigits))
         return (self * multiplier).rounded() / multiplier
     }
