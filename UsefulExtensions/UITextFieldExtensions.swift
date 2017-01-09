@@ -12,9 +12,9 @@ extension UITextField{
     
     // changes placeholder text color
     
-    @IBInspectable public var placeHolderColor: UIColor? {
+    @IBInspectable public var placeholderColor: UIColor? {
         get {
-            return self.placeHolderColor
+            return self.placeholderColor
         }
         set {
             self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSForegroundColorAttributeName: newValue!])
