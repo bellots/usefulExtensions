@@ -10,10 +10,10 @@ import Foundation
 
 
 extension Locale{
-    static var italy:Locale{
+    public static var italy:Locale{
         return Locale(identifier: "it-IT")
     }
-    static var usa:Locale{
+    public static var usa:Locale{
         return Locale(identifier: "en-US")
     }
 }

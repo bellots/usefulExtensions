@@ -19,7 +19,7 @@ extension Double {
     
     // returns number formatted in what you need
     
-    func format(with locale:Locale, and format:NumberFormatter.Style)->String{
+    public func format(with locale:Locale, and format:NumberFormatter.Style)->String{
         let converted = NSDecimalNumber(decimal: Decimal(self))
         let formatter = NumberFormatter()
         formatter.locale = locale
