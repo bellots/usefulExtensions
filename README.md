@@ -1,8 +1,16 @@
-# usefulExtensions
+# UsefulExtensions
 
 This library gives you some useful vars and functions by extending standard classes and types.
 
 ## Types extended:
+
+### Locale:
+
+* Get Locale from a simple static var
+```
+Locale.italy // returns Locale with string "it-IT"
+Locale.usa // returns Locale with string "en-US"
+```
 
 ### Double:
 
@@ -10,6 +18,13 @@ This library gives you some useful vars and functions by extending standard clas
 
 ```
 2.123131.round(fractionDigits:2) // output: 2.12
+```
+
+* Returns a string formatted starting from the double with locale and style
+
+```
+let price:Double = 100.00
+print(price.format(with: .italy, and: .currencyISOCode)) // prints 100.00 EUR
 ```
 
 ### String:
