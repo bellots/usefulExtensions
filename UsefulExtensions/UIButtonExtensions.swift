@@ -12,11 +12,11 @@ extension UIButton {
     
     //MARK - Utility for edit label properties
     
-    var titleLabelFont: UIFont! {
+    public var titleLabelFont: UIFont! {
         get { return self.titleLabel?.font }
         set { self.titleLabel?.font = newValue }
     }
-    var textColor:UIColor?{
+    public var textColor:UIColor?{
         get { return self.titleLabel?.textColor }
         set { self.setTitleColor(newValue, for: .normal) }
     }
