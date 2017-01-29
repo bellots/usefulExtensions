@@ -9,14 +9,11 @@
 import Foundation
 import MapKit
 
-extension UIStackView {
+extension MKMapView{
     
-    //MARK: - Add view to StackView with Width desired
-    
-    public func add(_ view:UIView, width:CGFloat){
-        self.addArrangedSubview(view)
-        let tempWidth = view.widthAnchor.constraint(equalToConstant: width)
-        tempWidth.isActive = true
-        self.translatesAutoresizingMaskIntoConstraints = false
+    public func centerMapOnLocation(location: CLLocation, radius:CLLocationDistance) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+                                                                  radius * 2.0, radius * 2.0)
+        self.setRegion(coordinateRegion, animated: true)
     }
 }
