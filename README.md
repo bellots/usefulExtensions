@@ -170,10 +170,32 @@ myView.fadeOut(withAnimation:true)
 myView.fade(withAnimation:true)
 ```
 
+* get top constraint array
+
+```
+let constraints:[NSLayoutConstraint] = myView.topConstraints
+```
+
 * useful IBInspectable variables
 
 ```
 myView.cornerRadius = 5.0
 myView.borderWidth = 2.0
 myView.borderColor = UIColor.blue
+```
+
+### MKMapView:
+
+* center the map on the desired location with the desired radius
+
+```
+mapView.centerMapOnLocation(location, radius:50000)
+```
+
+### UIStackView:
+
+* add an arranged subView to UIStackView giving the desired width
+
+```
+stackView.add(myView, width:150)
 ```
