@@ -136,7 +136,7 @@ extension UIView {
     func isTopConstraint(constraint:NSLayoutConstraint)->Bool{
         return firstMatchesConstraint(constraint: constraint) || secondMatchesConstraint(constraint: constraint)
     }
-    var topConstraints:[NSLayoutConstraint]{
+    public var topConstraints:[NSLayoutConstraint]{
         return (self.constraints.filter({isTopConstraint(constraint: $0)}) + self.constraintsAffectingLayout(for: .vertical).filter({isTopConstraint(constraint: $0)}))
     }
     
