@@ -125,6 +125,21 @@ extension UIView {
         }
     }
     
+    //MARK: - Top Constraint utility (topConstraints var returns top constraints)
+    
+    func firstMatchesConstraint(constraint:NSLayoutConstraint)->Bool{
+        return constraint.firstItem as? NSObject == self && constraint.firstAttribute == .top
+    }
+    func secondMatchesConstraint(constraint:NSLayoutConstraint)->Bool{
+        return constraint.secondItem as? NSObject == self && constraint.firstAttribute == .top
+    }
+    func isTopConstraint(constraint:NSLayoutConstraint)->Bool{
+        return firstMatchesConstraint(constraint: constraint) || secondMatchesConstraint(constraint: constraint)
+    }
+    var topConstraints:[NSLayoutConstraint]{
+        return (self.constraints.filter({isTopConstraint(constraint: $0)}) + self.constraintsAffectingLayout(for: .vertical).filter({isTopConstraint(constraint: $0)}))
+    }
+    
     
     // Variables for corner radius and border accessibles from storyboard
     
