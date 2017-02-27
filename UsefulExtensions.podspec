@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "UsefulExtensions"
-  s.version      = "0.1.3"
+  s.version      = "0.1.4"
   s.summary      = "Some useful extensions in Swift."
   s.description  =  <<-DESC
                     Here you can find some class extension which i created in my projects.
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.author             = { "Andrea Bellotto" => "andreabellotto88@gmail.com" }
 
   s.source       = { :git => "https://github.com/bellots/usefulExtensions.git", :tag => "#{s.version}" }
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.3'
 
   s.source_files  = "Classes", "UsefulExtensions/**/*.{h,m,swift}"
 
