@@ -12,6 +12,7 @@
 		6A46E5521E3E3B500012D183 /* MKMapViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46E5511E3E3B500012D183 /* MKMapViewExtensions.swift */; };
 		6A46E5541E3E3B740012D183 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46E5531E3E3B740012D183 /* UIButtonExtensions.swift */; };
 		6A4A77CB1E2E5A8300940E9A /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4A77CA1E2E5A8300940E9A /* LocaleExtensions.swift */; };
+		6A58F91F1E85720500541EB2 /* RawRepresentableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A58F91E1E85720500541EB2 /* RawRepresentableExtensions.swift */; };
 		6A9B00E21E20FFF6005FC525 /* UsefulExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A9B00E01E20FFF6005FC525 /* UsefulExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A9B00F21E210074005FC525 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B00E81E210074005FC525 /* DoubleExtensions.swift */; };
 		6A9B00F31E210074005FC525 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B00E91E210074005FC525 /* StringExtensions.swift */; };
@@ -30,6 +31,7 @@
 		6A46E5511E3E3B500012D183 /* MKMapViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKMapViewExtensions.swift; sourceTree = "<group>"; };
 		6A46E5531E3E3B740012D183 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		6A4A77CA1E2E5A8300940E9A /* LocaleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocaleExtensions.swift; sourceTree = "<group>"; };
+		6A58F91E1E85720500541EB2 /* RawRepresentableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawRepresentableExtensions.swift; sourceTree = "<group>"; };
 		6A9B00DD1E20FFF6005FC525 /* UsefulExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UsefulExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9B00E01E20FFF6005FC525 /* UsefulExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsefulExtensions.h; sourceTree = "<group>"; };
 		6A9B00E11E20FFF6005FC525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				6A9B00E01E20FFF6005FC525 /* UsefulExtensions.h */,
 				6A9B00E11E20FFF6005FC525 /* Info.plist */,
 				6A9B00E81E210074005FC525 /* DoubleExtensions.swift */,
+				6A58F91E1E85720500541EB2 /* RawRepresentableExtensions.swift */,
 				6A4A77CA1E2E5A8300940E9A /* LocaleExtensions.swift */,
 				6A9B00E91E210074005FC525 /* StringExtensions.swift */,
 				6A9B00EA1E210074005FC525 /* UIApplicationExtensions.swift */,
@@ -188,6 +191,7 @@
 				6A9B00F91E210074005FC525 /* UITextFieldExtensions.swift in Sources */,
 				6A9B00F21E210074005FC525 /* DoubleExtensions.swift in Sources */,
 				6A9B00F51E210074005FC525 /* UIColorExtensions.swift in Sources */,
+				6A58F91F1E85720500541EB2 /* RawRepresentableExtensions.swift in Sources */,
 				6A46E5541E3E3B740012D183 /* UIButtonExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
