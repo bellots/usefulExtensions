@@ -82,7 +82,7 @@ extension String {
         let startOffset = max(0, start)
         let endOffset = length > 0 ? min(count, startOffset + length - 1) : count
         
-        return self[self.index(self.startIndex, offsetBy: startOffset)...self.index(self.startIndex, offsetBy: endOffset)]
+        return String(self[self.index(self.startIndex, offsetBy: startOffset)...self.index(self.startIndex, offsetBy: endOffset)])
     }
     public var encoded:String
     {
