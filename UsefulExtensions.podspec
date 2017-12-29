@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "UsefulExtensions"
-  s.version      = "0.2.1"
+  s.version      = "0.2.2"
   s.summary      = "Some useful extensions in Swift."
   s.description  =  <<-DESC
                     Here you can find some class extension which i created in my projects.
@@ -25,6 +25,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.3'
 
   s.source_files  = "Classes", "UsefulExtensions/**/*.{h,m,swift}"
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
 end

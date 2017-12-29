@@ -73,7 +73,7 @@ extension String {
             return nil
         }
         
-        let count = self.characters.count - 1
+        let count = self.count - 1
         
         guard start <= count else {
             return nil
